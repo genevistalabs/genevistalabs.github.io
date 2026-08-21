@@ -1,0 +1,201 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeneVista Labs | Medical Biotechnology & Genomics</title>
+  <meta name="description" content="GeneVista Labs — Medical biotechnology, genetics, molecular diagnostics, genomics, bioinformatics and biotechnology education.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #16324F;
+  background: #F7FBFC;
+}
+
+header {
+  background: #0B6E69;
+  color: white;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 14px;
+}
+
+.hero {
+  padding: 90px 7%;
+  text-align: center;
+  background: linear-gradient(135deg, #E7F7F5, #F7FBFC);
+}
+
+.hero h1 {
+  font-size: 44px;
+  margin-bottom: 15px;
+  color: #0B6E69;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 13px 25px;
+  background: #0B6E69;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+section {
+  padding: 65px 7%;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 35px;
+  color: #0B6E69;
+  font-size: 30px;
+}
+
+.about {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  color: #0B6E69;
+  margin-bottom: 10px;
+}
+
+.contact {
+  text-align: center;
+  background: #E7F7F5;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #16324F;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    margin: 0 6px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+}
+
+  </style>
+</head><body><header>
+  <div class="logo">🧬 GeneVista Labs</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header><section class="hero">
+  <h1>GeneVista Labs</h1>
+  <p>
+    Exploring genetics. Advancing biotechnology. Transforming health through science.
+  </p>
+  <a class="button" href="#services">Explore Our Work</a>
+</section><section id="about">
+  <h2 class="title">About GeneVista Labs</h2>
+  <div class="about">
+    <p>
+      GeneVista Labs is a medical biotechnology initiative focused on
+      genetics, molecular diagnostics, genomics, bioinformatics, laboratory
+      science and biotechnology education.
+    </p>
+    <br>
+    <p>
+      Our vision is to contribute to better health outcomes through
+      scientific knowledge, innovative research and biotechnology-driven
+      solutions.
+    </p>
+  </div>
+</section><section id="services">
+  <h2 class="title">Our Areas of Focus</h2>  <div class="services"><div class="card">
+  <h3>🧬 Genetics & Genomics</h3>
+  <p>
+    Exploring genetic information, genomic technologies and their
+    applications in healthcare and research.
+  </p>
+</div>
+
+<div class="card">
+  <h3>🔬 Molecular Diagnostics</h3>
+  <p>
+    Promoting knowledge and awareness of molecular approaches used
+    in disease detection and laboratory research.
+  </p>
+</div>
+
+<div class="card">
+  <h3>💻 Bioinformatics</h3>
+  <p>
+    Applying computational approaches to biological data and
+    supporting modern genomic research.
+  </p>
+</div>
+
+<div class="card">
+  <h3>🧪 Biotechnology Education</h3>
+  <p>
+    Sharing accessible educational resources in medical biotechnology,
+    genetics, laboratory science and molecular biology.
+  </p>
+</div>
+
+  </div>
+</section><section id="contact" class="contact">
+  <h2 class="title">Get in Touch</h2>
+  <p>Interested in biotechnology, research or collaboration?</p>
+  <p><strong>Phone:</strong> 0740043567</p>
+  <p><strong>Email:</strong> genevistalabs@gmail.com</p>
+</section><footer>
+  <p>© 2026 GeneVista Labs. All rights reserved.</p>
+  <p>Medical Biotechnology • Genetics • Genomics • Bioinformatics</p>
+</footer></body>
+</html>
