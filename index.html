@@ -1,354 +1,489 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>GeneVista Labs | Biotechnology & Genomics</title><meta name="description" content="GeneVista Labs focuses on genetics, molecular diagnostics, genomics, bioinformatics, research and biotechnology education."><style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-html {
-  scroll-behavior: smooth;
-}
+  <title>GeneVista Labs | Biotechnology, Genomics & Diagnostics</title>
 
-body {
-  font-family: Arial, sans-serif;
-  color: #17324d;
-  background: #f7fbfc;
-  line-height: 1.6;
-}
+  <meta name="description" content="GeneVista Labs is a medical biotechnology initiative focused on genetics, molecular diagnostics, genomics, bioinformatics, research and biotechnology education.">
 
-header {
-  background: #063b4c;
-  color: white;
-  padding: 18px 7%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-.logo {
-  font-size: 25px;
-  font-weight: bold;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-.logo span {
-  color: #50d5c7;
-}
+    body {
+      font-family: Arial, sans-serif;
+      color: #17324d;
+      background: #f7fbfc;
+      line-height: 1.6;
+    }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-  font-size: 15px;
-}
+    header {
+      background: #063b4c;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-nav a:hover {
-  color: #50d5c7;
-}
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
 
-.hero {
-  min-height: 85vh;
-  display: flex;
-  align-items: center;
-  padding: 70px 7%;
-  background: linear-gradient(135deg, #e5f8f6, #f7fbfc);
-}
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 15px;
+    }
 
-.hero-content {
-  max-width: 800px;
-}
+    nav a:hover {
+      color: #5eead4;
+    }
 
-.hero h1 {
-  font-size: 52px;
-  color: #063b4c;
-  margin-bottom: 20px;
-}
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      padding: 70px 7%;
+      background: linear-gradient(135deg, #e9f8f7, #f7fbfc);
+    }
 
-.hero h1 span {
-  color: #0b8f83;
-}
+    .hero-content {
+      max-width: 800px;
+    }
 
-.hero p {
-  font-size: 20px;
-  margin-bottom: 30px;
-  color: #456273;
-}
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 72px);
+      color: #063b4c;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
 
-.button {
-  display: inline-block;
-  background: #0b8f83;
-  color: white;
-  padding: 14px 26px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-right: 10px;
-}
+    .hero h1 span {
+      color: #0f9d8a;
+    }
 
-.button:hover {
-  background: #063b4c;
-}
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
+      margin-bottom: 30px;
+      color: #425b6d;
+    }
 
-.button-outline {
-  background: transparent;
-  color: #0b8f83;
-  border: 2px solid #0b8f83;
-}
+    .button {
+      display: inline-block;
+      padding: 14px 25px;
+      background: #0f9d8a;
+      color: white;
+      text-decoration: none;
+      border-radius: 7px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
 
-section {
-  padding: 75px 7%;
-}
+    .button:hover {
+      background: #087c6e;
+    }
 
-.section-title {
-  text-align: center;
-  color: #063b4c;
-  font-size: 34px;
-  margin-bottom: 15px;
-}
+    .button.secondary {
+      background: #063b4c;
+    }
 
-.section-subtitle {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto 45px;
-  color: #607887;
-}
+    section {
+      padding: 75px 7%;
+    }
 
-.about {
-  max-width: 900px;
-  margin: auto;
-  text-align: center;
-  font-size: 18px;
-}
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
 
-.services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-}
+    .section-title h2 {
+      font-size: 36px;
+      color: #063b4c;
+      margin-bottom: 10px;
+    }
 
-.card {
-  background: white;
-  padding: 30px 25px;
-  border-radius: 14px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-  transition: transform 0.3s;
-}
+    .section-title p {
+      max-width: 700px;
+      margin: auto;
+      color: #5d7180;
+    }
 
-.card:hover {
-  transform: translateY(-5px);
-}
+    .about {
+      background: white;
+    }
 
-.icon {
-  font-size: 38px;
-  margin-bottom: 15px;
-}
+    .about-content {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      font-size: 18px;
+    }
 
-.card h3 {
-  color: #0b8f83;
-  margin-bottom: 10px;
-}
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+    }
 
-.mission {
-  background: #063b4c;
-  color: white;
-  text-align: center;
-}
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+      transition: transform 0.3s ease;
+    }
 
-.mission h2 {
-  color: white;
-}
+    .card:hover {
+      transform: translateY(-6px);
+    }
 
-.mission p {
-  max-width: 800px;
-  margin: auto;
-  font-size: 19px;
-}
+    .card-icon {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
 
-.contact {
-  text-align: center;
-  background: #e5f8f6;
-}
+    .card h3 {
+      color: #063b4c;
+      margin-bottom: 10px;
+    }
 
-.contact-box {
-  max-width: 650px;
-  margin: auto;
-}
+    .research {
+      background: #eef8f7;
+    }
 
-.contact-item {
-  margin: 15px 0;
-  font-size: 18px;
-}
+    .education {
+      background: white;
+    }
 
-.contact a {
-  color: #0b8f83;
-  font-weight: bold;
-  text-decoration: none;
-}
+    .cta {
+      background: #063b4c;
+      color: white;
+      text-align: center;
+    }
 
-footer {
-  background: #032b38;
-  color: white;
-  text-align: center;
-  padding: 30px 7%;
-}
+    .cta h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
 
-footer p {
-  margin: 5px;
-}
+    .cta p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
 
-@media (max-width: 700px) {
+    .contact {
+      background: #f7fbfc;
+    }
 
-  header {
-    flex-direction: column;
-    gap: 12px;
-  }
+    .contact-box {
+      max-width: 750px;
+      margin: auto;
+      background: white;
+      padding: 35px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+      text-align: center;
+    }
 
-  nav a {
-    margin: 0 7px;
-    font-size: 13px;
-  }
+    .contact-box p {
+      margin: 10px 0;
+    }
 
-  .hero {
-    min-height: 75vh;
-  }
+    footer {
+      background: #032b38;
+      color: white;
+      text-align: center;
+      padding: 25px 7%;
+    }
 
-  .hero h1 {
-    font-size: 38px;
-  }
+    footer p {
+      margin: 5px 0;
+    }
 
-  .hero p {
-    font-size: 17px;
-  }
-}
-</style></head><body><header>  <div class="logo">
-    🧬 GeneVista <span>Labs</span>
-  </div>  <nav>
+    @media (max-width: 750px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 13px;
+      }
+
+      .hero {
+        min-height: 75vh;
+        padding-top: 55px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      section {
+        padding: 55px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🧬 GeneVista Labs</div>
+
+  <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#services">Services</a>
-    <a href="#mission">Vision</a>
+    <a href="#research">Research</a>
+    <a href="#education">Education</a>
     <a href="#contact">Contact</a>
-  </nav></header><section class="hero" id="home">  <div class="hero-content"><h1>
-  Exploring Genetics.<br>
-  <span>Advancing Biotechnology.</span>
-</h1>
+  </nav>
+</header>
 
-<p>
-  GeneVista Labs is a medical biotechnology initiative focused on
-  genetics, molecular diagnostics, genomics, bioinformatics,
-  research and biotechnology education.
-</p>
+<section class="hero" id="home">
+  <div class="hero-content">
 
-<a class="button" href="#services">Explore Our Work</a>
+    <h1>Exploring Life Through <span>Science</span></h1>
 
-<a class="button button-outline" href="#contact">Contact Us</a>
+    <p>
+      GeneVista Labs is a medical biotechnology initiative focused on
+      genetics, molecular diagnostics, genomics, bioinformatics,
+      biotechnology research and scientific education.
+    </p>
 
-  </div></section><section id="about">  <h2 class="section-title">About GeneVista Labs</h2>  <p class="section-subtitle">
-    Science, innovation and knowledge for a healthier future.
-  </p>  <div class="about"><p>
-  GeneVista Labs is a medical biotechnology initiative committed to
-  promoting scientific knowledge and innovation in genetics,
-  molecular biology and biotechnology.
-</p>
+    <a href="#services" class="button">Explore Our Work</a>
+    <a href="#contact" class="button secondary">Contact Us</a>
 
-<br>
+  </div>
+</section>
 
-<p>
-  We aim to connect biotechnology education, research and modern
-  scientific approaches to health challenges while encouraging
-  curiosity, innovation and collaboration.
-</p>
+<section class="about" id="about">
 
-  </div></section><section id="services">  <h2 class="section-title">Our Areas of Focus</h2>  <p class="section-subtitle">
-    Discover the scientific fields at the heart of GeneVista Labs.
-  </p>  <div class="services"><div class="card">
-  <div class="icon">🧬</div>
-  <h3>Genetics & Genomics</h3>
+  <div class="section-title">
+    <h2>About GeneVista Labs</h2>
+    <p>Science, innovation and knowledge for a healthier future.</p>
+  </div>
+
+  <div class="about-content">
+    <p>
+      GeneVista Labs is an emerging medical biotechnology initiative
+      dedicated to promoting scientific knowledge, biotechnology
+      innovation and the application of molecular sciences to health
+      and research challenges.
+    </p>
+
+    <br>
+
+    <p>
+      Our interests span genetics, genomics, molecular diagnostics,
+      bioinformatics, biotechnology education and biomedical research.
+      We aim to connect scientific knowledge with real-world health
+      challenges and inspire the next generation of biotechnology
+      professionals.
+    </p>
+  </div>
+
+</section>
+
+<section id="services">
+
+  <div class="section-title">
+    <h2>Our Areas of Focus</h2>
+    <p>Discover the scientific fields driving GeneVista Labs.</p>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="card-icon">🧬</div>
+      <h3>Genetics & Genomics</h3>
+      <p>
+        Exploring genes, genomes, genetic variation and their
+        applications in modern biomedical science.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">🔬</div>
+      <h3>Molecular Diagnostics</h3>
+      <p>
+        Promoting knowledge of molecular approaches used in disease
+        detection, identification and research.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">💻</div>
+      <h3>Bioinformatics</h3>
+      <p>
+        Applying computational approaches to biological data,
+        genomics and molecular research.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">🧪</div>
+      <h3>Biotechnology Research</h3>
+      <p>
+        Exploring innovative biotechnology approaches to biomedical
+        and public health challenges.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">📚</div>
+      <h3>Scientific Education</h3>
+      <p>
+        Sharing accessible learning resources in medical biotechnology,
+        molecular biology, genetics and related sciences.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">🌍</div>
+      <h3>Health Innovation</h3>
+      <p>
+        Connecting biotechnology research and scientific knowledge
+        with health challenges affecting communities.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="research" id="research">
+
+  <div class="section-title">
+    <h2>Research & Innovation</h2>
+    <p>
+      Building knowledge through biotechnology, molecular science
+      and data-driven research.
+    </p>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Genomic Research</h3>
+      <p>
+        Exploring genomic data and molecular mechanisms that can
+        contribute to improved understanding of disease.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Antimicrobial Resistance</h3>
+      <p>
+        Promoting research and education around antimicrobial
+        resistance and emerging infectious disease challenges.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Molecular Biology</h3>
+      <p>
+        Exploring DNA, RNA, proteins and molecular pathways involved
+        in biological processes and disease.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="education" id="education">
+
+  <div class="section-title">
+    <h2>Biotechnology Education</h2>
+    <p>
+      Learn. Explore. Innovate.
+    </p>
+  </div>
+
+  <div class="about-content">
+    <p>
+      GeneVista Labs aims to create educational content that makes
+      biotechnology and molecular sciences easier to understand.
+      Future resources will include study materials, scientific
+      articles, research guidance and biotechnology learning content.
+    </p>
+  </div>
+
+</section>
+
+<section class="cta">
+
+  <h2>Join the GeneVista Journey</h2>
+
   <p>
-    Exploring genes, genomes and modern genomic technologies
-    relevant to health and biomedical research.
+    Follow our journey as we explore genetics, genomics,
+    biotechnology and the future of biomedical science.
   </p>
-</div>
 
-<div class="card">
-  <div class="icon">🔬</div>
-  <h3>Molecular Diagnostics</h3>
+  <a href="#contact" class="button">Get in Touch</a>
+
+</section>
+
+<section class="contact" id="contact">
+
+  <div class="section-title">
+    <h2>Contact GeneVista Labs</h2>
+    <p>
+      Interested in biotechnology, research, collaboration or
+      scientific education?
+    </p>
+  </div>
+
+  <div class="contact-box">
+
+    <p><strong>GeneVista Labs</strong></p>
+
+    <p>
+      Medical Biotechnology • Genetics • Genomics • Bioinformatics
+    </p>
+
+    <p>
+      📧 Email: Coming soon
+    </p>
+
+    <p>
+      📍 Kenya
+    </p>
+
+  </div>
+
+</section>
+
+<footer>
+
   <p>
-    Promoting knowledge of molecular approaches used in disease
-    detection and biomedical laboratory research.
-  </p>
-</div>
-
-<div class="card">
-  <div class="icon">💻</div>
-  <h3>Bioinformatics</h3>
-  <p>
-    Exploring computational approaches for analysing biological
-    and genomic data.
-  </p>
-</div>
-
-<div class="card">
-  <div class="icon">🧪</div>
-  <h3>Biotechnology Research</h3>
-  <p>
-    Supporting scientific thinking and research in medical and
-    applied biotechnology.
-  </p>
-</div>
-
-<div class="card">
-  <div class="icon">📚</div>
-  <h3>Education</h3>
-  <p>
-    Making biotechnology, genetics, molecular biology and
-    laboratory science easier to understand.
-  </p>
-</div>
-
-<div class="card">
-  <div class="icon">🌍</div>
-  <h3>Health Innovation</h3>
-  <p>
-    Exploring biotechnology-driven approaches to health challenges
-    in Africa and beyond.
-  </p>
-</div>
-
-  </div></section><section class="mission" id="mission">  <h2 class="section-title">Our Vision</h2>  <p>
-    To become a trusted biotechnology platform that connects
-    scientific knowledge, research and innovation to meaningful
-    health solutions.
-  </p></section><section id="contact" class="contact">  <h2 class="section-title">Let's Connect</h2>  <p class="section-subtitle">
-    Interested in biotechnology, research, education or collaboration?
-    Get in touch with GeneVista Labs.
-  </p>  <div class="contact-box"><div class="contact-item">
-  📞 <strong>Phone:</strong>
-  <a href="tel:0740043567">0740043567</a>
-</div>
-
-<div class="contact-item">
-  💬 <strong>WhatsApp:</strong>
-  <a href="https://wa.me/254740043567">
-    Chat with GeneVista Labs
-  </a>
-</div>
-
-<div class="contact-item">
-  📧 <strong>Email:</strong>
-  <a href="mailto:genevistalabs@gmail.com">
-    genevistalabs@gmail.com
-  </a>
-</div>
-
-  </div></section><footer>  <p><strong>🧬 GeneVista Labs</strong></p>  <p>
-    Medical Biotechnology • Genetics • Genomics • Bioinformatics
-  </p>  <p>
     © 2026 GeneVista Labs. All rights reserved.
-  </p></footer></body>
-</html>
+  </p>
+
+  <p>
+    Medical Biotechnology • Genetics • Genomics • Bioinformatics
+  </p>
+
+</footer>
+
+</body>
+    </html>
